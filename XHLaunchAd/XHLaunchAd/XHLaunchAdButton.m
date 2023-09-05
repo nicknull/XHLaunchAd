@@ -15,8 +15,11 @@
 #define BackgroundColor [UIColor colorWithRed:0 green:0 blue:0 alpha:0.4]
 /** 字体颜色 */
 #define FontColor  [UIColor whiteColor]
+#define XHRTL [[NSUserDefaults standardUserDefaults] boolForKey:@"RTL"]
 
-#define SkipTitle @"跳过"
+#define SkipTitle  XHRTL ? @"ئاتلاش":@"跳过"
+
+
 /** 倒计时单位 */
 #define DurationUnit @"S"
 
